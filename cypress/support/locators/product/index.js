@@ -12,4 +12,4 @@ module.exports = {
     stok: '//*[@id="stok"]',
     kategori: '//*[@id="kategori"]',
   },
-};
+}

@@ -14,5 +14,9 @@ describe("User should be able to login", () => {
     kategoriPage.openKategori();
 
     kategoriPage.openTambahKategori();
+    kategoriPage.inputNama()
+    kategoriPage.inputDeskripsi()
+    
   });
+
 });
