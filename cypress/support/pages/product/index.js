@@ -45,6 +45,7 @@ class Product {
   async klikSimpanButton() {
     cy.get(locatorProduct.button.simpan).click();
   }
+
 }
 
 module.exports = new Product();
