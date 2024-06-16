@@ -4,7 +4,7 @@ const data = require("../../data-test/login")
 
 class LoginPage {
   async visitLoginPageUrl() {
-    cy.visit("https://kasiraja.ajikamaludin.id");
+    cy.visit("https://kasirdemo.belajarqa.com");
   }
 
   async verifyLoginPageAppears() {
