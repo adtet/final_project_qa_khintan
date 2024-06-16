@@ -14,5 +14,14 @@ describe("User should be able to login", () => {
     productPage.openProduct();
 
     productPage.openTambahProduct();
+    productPage.inputKode()
+    productPage.inputNama()
+    productPage.inputDeskripsi()
+    productPage.inputHargaJual()
+    productPage.inputHargaBeli()
+    productPage.inputStok()
+    productPage.inputKategori()
+    productPage.klikSimpanButton()
+    
   });
 });
