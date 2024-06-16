@@ -1,4 +1,5 @@
 const page = require("../support/pages/login");
+const productPage = require("../support/pages/product")
 
 describe("User should be able to login", () => {
   // flaky
