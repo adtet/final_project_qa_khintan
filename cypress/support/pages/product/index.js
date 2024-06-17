@@ -10,22 +10,34 @@ class Product {
   async openTambahProduct() {
     cy.xpath(locatorProduct.button.tambah).click();
   }
+
+  async openUbahProduct() {
+    cy.get('button[id^="menu-button-"]').eq(1).click();
+    cy.xpath(`//a[@href="/products/${data.data_edit.id}/edit"]`).click();
+  }
+
   async inputKode() {
+    cy.xpath(locatorProduct.input.kode).clear()
     cy.xpath(locatorProduct.input.kode).type(data.kode);
   }
   async inputNama() {
+    cy.xpath(locatorProduct.input.nama).clear()
     cy.xpath(locatorProduct.input.nama).type(data.nama);
   }
   async inputDeskripsi() {
+    cy.xpath(locatorProduct.input.deskripsi).clear()
     cy.xpath(locatorProduct.input.deskripsi).type(data.deskripsi);
   }
   async inputHargaBeli() {
+    cy.xpath(locatorProduct.input.harga_beli).clear()
     cy.xpath(locatorProduct.input.harga_beli).type(data.harga_beli);
   }
   async inputHargaJual() {
+    cy.xpath(locatorProduct.input.harga_jual).clear()
     cy.xpath(locatorProduct.input.harga_jual).type(data.harga_jual);
   }
   async inputStok() {
+    cy.xpath(locatorProduct.input.stok).clear()
     cy.xpath(locatorProduct.input.stok).type(data.stok);
   }
   async inputKategori() {
@@ -45,7 +57,6 @@ class Product {
   async klikSimpanButton() {
     cy.get(locatorProduct.button.simpan).click();
   }
-
 }
 
 module.exports = new Product();
