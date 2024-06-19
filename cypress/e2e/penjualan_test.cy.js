@@ -1,5 +1,5 @@
 const loginPage = require("../support/pages/login");
-const kategoriPage = require("../support/pages/kategori");
+const penjualanPage = require("../support/pages/penjualan")
 
 describe("User should be able to login", () => {
   // flaky
@@ -11,7 +11,7 @@ describe("User should be able to login", () => {
     loginPage.clickLoginButton();
 
     // homePage.verifyHomePageAppears();
-    kategoriPage.openKategori();
+    penjualanPage.openPenjualan();
     
 
   });

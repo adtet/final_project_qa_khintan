@@ -1,5 +1,5 @@
 const loginPage = require("../support/pages/login");
-const kategoriPage = require("../support/pages/kategori");
+const pembelianPage = require("../support/pages/pembelian");
 
 describe("User should be able to login", () => {
   // flaky
@@ -11,8 +11,9 @@ describe("User should be able to login", () => {
     loginPage.clickLoginButton();
 
     // homePage.verifyHomePageAppears();
-    kategoriPage.openKategori();
-    
-
+    pembelianPage.openPembelian();
+    pembelianPage.openTambahPembelian();
+    pembelianPage.klikProduk();
+    pembelianPage.klikSimpan();
   });
 });

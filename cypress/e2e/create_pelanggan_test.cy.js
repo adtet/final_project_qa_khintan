@@ -1,5 +1,5 @@
 const loginPage = require("../support/pages/login");
-const kategoriPage = require("../support/pages/kategori");
+const pelangganPage = require("../support/pages/pelanggan");
 
 describe("User should be able to login", () => {
   // flaky
@@ -11,8 +11,12 @@ describe("User should be able to login", () => {
     loginPage.clickLoginButton();
 
     // homePage.verifyHomePageAppears();
-    kategoriPage.openKategori();
-    
-
+    pelangganPage.openPelanggan();
+    pelangganPage.openTambahPelanggan();
+    pelangganPage.inputNama();
+    pelangganPage.inputNoHP();
+    pelangganPage.inputAlamat();
+    pelangganPage.inputKeterangan();
+    pelangganPage.klikSimpanButton();
   });
 });

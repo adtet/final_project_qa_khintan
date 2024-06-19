@@ -2,6 +2,7 @@ module.exports = {
   button: {
     tambah: '//a[@href="/products/create"]',
     simpan: ".chakra-button.css-l5lnz6",
+    hapus: '//button[@class="chakra-menu__menuitem css-13c7rae"]',
   },
   input: {
     kode: '//*[@id="kode"]',
@@ -12,4 +13,4 @@ module.exports = {
     stok: '//*[@id="stok"]',
     kategori: '//*[@id="kategori"]',
   },
-}
+};

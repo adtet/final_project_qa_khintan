@@ -12,7 +12,9 @@ describe("User should be able to login", () => {
 
     // homePage.verifyHomePageAppears();
     kategoriPage.openKategori();
-    
-
+    kategoriPage.openUbahKategori();
+    kategoriPage.inputNama();
+    kategoriPage.inputDeskripsi();
+    kategoriPage.klikSimpanButton();
   });
 });

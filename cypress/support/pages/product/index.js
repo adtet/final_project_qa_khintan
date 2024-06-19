@@ -16,6 +16,11 @@ class Product {
     cy.xpath(`//a[@href="/products/${data.data_edit.id}/edit"]`).click();
   }
 
+  async openHapusProduct(){
+    cy.get('button[id^="menu-button-"]').eq(1).click();
+    cy.xpath(locatorProduct.button.hapus).eq(1).click()
+  }
+
   async inputKode() {
     cy.xpath(locatorProduct.input.kode).clear()
     cy.xpath(locatorProduct.input.kode).type(data.kode);

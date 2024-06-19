@@ -7,6 +7,6 @@ module.exports = {
   stok: "5",
   kategori: "ROTI",
   data_edit: {
-    id: "07f6656f-66f0-4974-a2bf-a1125481809b",
+    id: "73095867-bc70-45e6-93f0-0e97cc59a2e0",
   },
 };
